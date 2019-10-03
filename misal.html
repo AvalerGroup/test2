@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .container-1{
+            background-color: #555555;
+            height:6vh;
+        }
+        .container-1-1{
+            /* background-color: salmon; */
+            height:6vh;
+            padding-left:5%;
+            font-size:0.8em;
+            line-height: 6vh;
+        }
+        
+        .container-1-1 a{
+            color:white;
+            text-decoration: underline;
+        }
+        .button-1{
+            padding:0;
+            border:0;
+            background-color: transparent;
+            margin:0;
+            outline: none;
+            margin-left:50%;
+        }
+        .button-1:hover{
+            background-color: transparent;
+        }
+
+        .container-2{
+            background-color: #F8CB1C;
+            height: auto;
+            color: #333333;
+        }
+        /* .container-2 div{
+            padding: 0;
+        } */
+        .container-2-1{
+            /* background-color: salmon; */
+            height:13vh;
+        }
+        #a-1{
+            font-weight: bolder;
+            font-size: 3.3em;
+            text-decoration: none;
+            color:black;
+        }
+        #div-1{
+            /* background-color: white; */
+        }
+        #btn-1{
+            height: 10vh;
+            font-weight: bold;
+            background-color:#F9D54B;
+            border:0;
+            outline: none;
+            font-family: "PT Sans Narrow", sans-serif;
+            font-size: 19px;
+            line-height: 10vh;
+            margin-top:10%;
+            width: 100%;
+        }
+        #row-1{
+            padding: 0;
+        }
+        div{
+            padding-right:0 !important;
+          
+        }
+
+        #btn-2{
+            height: 10vh;
+            font-weight: bold;
+            background-color: transparent;
+            border:0;
+            outline: none;
+            text-decoration: underline;
+            font-family: "PT Sans Narrow", sans-serif;
+            font-size: 19px;
+            line-height: 10vh;
+            margin-top:10%;
+            width: 100%;
+        }
+
+        .btn-2{
+            height: 11vh;
+            width: 80%;
+            font-family: "PT Sans Narrow", sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+            background-color: transparent;
+            border: 0;
+            outline:none !important;
+            line-height: 11vh;
+            margin-top:7.5%;
+        }
+        .btn-2:hover{
+            background-color: #F9D54B;
+        }
+
+        .btn-3{
+            width: 70%;
+            height: 7vh;
+            border-radius: 8px;
+            background-color: #F4F4F4;
+            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-weight: bolder;
+            margin-top: 12%;
+           
+        }
+
+        .btn-3:hover{
+            background-color: #F9F3D9;
+        }
+
+        .container-2-2{
+            height:25vh;
+            background-color: #F9D54B;
+            padding-left:0 !important;
+            /* display: none; */
+        }
+        .container-fluid{
+            margin:0;
+            padding:0;
+        }
+        .container-2-2-1{
+            height:25vh;
+            /* background-color: white; */
+        }
+        .ul-1 ul {
+            list-style-type: none;
+            padding-top:2%;
+           
+        }
+        .ul-1 ul li{
+            padding-top:2%;
+            display: block;
+        }
+        .ul-1 ul li a{
+            padding-left:2%;
+            text-decoration: underline;
+            color:#333333;
+            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-weight: bolder;
+        }
+        .ul-1 ul li a:hover{
+            background-color: #FFDF80;
+        }
+        .ul-2 ul {
+            list-style-type: none;
+            padding-top:2%;
+        }
+        .ul-2 ul li{
+            padding-top:3%;
+            display: block;
+        }
+        .ul-2 ul li a{
+            padding-left:2%;
+            text-decoration: underline;
+            color:#333333;
+            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-weight: bolder;
+        }
+        .ul-2 ul li a:hover{
+            background-color: #FFDF80;
+        }
+        
+        .ul-3 ul {
+            list-style-type: none;
+            padding-top:2%;
+        }
+
+        .ul-3 ul li{
+            padding-top:2%;
+            display: block;
+        }
+        .ul-3 ul li a{
+            padding-left:2%;
+            text-decoration: underline;
+            color:#333333;
+            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-weight: bolder;
+        }
+
+        .ul-3 ul li a:hover{
+            background-color: #FFDF80;
+        }
+        .ul-1 ul li span{
+            color:#787053;
+        }
+        .ul-2 ul li span{
+            color:#787053;
+        }
+        .ul-3 ul li span{
+            color:#787053;
+        }
+
+        .container-2-2-2{
+            display: none;
+        }
+        .container-2-3{
+            height: 4vh;
+            /* background-color: black; */
+            text-align: center;
+            line-height: 4vh;
+        }
+
+        .container-2-3:hover{
+            background-color: #F9D54B;
+
+        }
+
+        .container-2-3 i{
+            display: inline-block;
+            font-size: 0.8em;
+            margin-top:5%;
+            
+        }
+
+        .container-2-3 button {
+            display: inline-block;
+        }
+        .container-2-3 ul{
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        .container-2-3 ul li {
+            display: inline-block;
+        }
+        .btn-2-3{
+            padding:0;
+            border:0;
+            background-color:transparent;
+            outline: none;
+            text-decoration: dotted;
+            color:#787053;
+        }
+
+        .btn-2-3:hover{
+            background-color:#F9D54B;
+            color:#787053;
+            outline: none;
+        }
+        .btn-2-3 span{
+            border-bottom: 1px dashed currentColor;
+        }
+
+        .container-3{
+            background-color:#F8CB1C;
+            height:40vh;
+        }
+
+        .container-3-1{
+            color:#787053;
+            font-weight: bolder;
+            padding-top:2%;
+            padding-left:4%;
+        }
+        .btn-2-1-2{
+            width: 80%;
+            text-align: left;
+            padding-left:5%;
+            border-radius: 6px;
+            background-color: white;
+            color:black;
+            letter-spacing: 1px;
+            height:6vh;
+        }
+        .btn-2-1-2:hover{
+            background-color: white;;
+            color:black;
+        }
+        .container-3-2{
+            color:#787053;
+            font-weight: bolder;
+            padding-top:2%;
+            padding-left:4%;
+        }
+
+        .btn-3-1{
+            background-color: white;
+            text-align: center;
+            font-family: "PT Sans Narrow", sans-serif;
+            width: 30%;
+            height:5vh;
+            border-radius: 8px;
+            color:black;
+            
+        }
+        .btn-3-1:hover{
+            background-color: #F9F3D9;
+        }
+        .container-3-3{
+            padding-top:2%;
+        }
+
+        .container-3{
+            display: none;
+        }
+
+        .btn-2-3-2{
+            padding:0;
+            border:0;
+            background-color:transparent;
+            outline: none;
+            visibility: hidden;
+           
+            color:#787053;
+            
+        }
+        .btn-2-3-2 span{
+            text-decoration: dotted;
+        }
+        .btn-2-3-2:hover{
+            background-color:#F9D54B;
+            color:#787053;
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+      <header>
+
+          <nav>
+
+              <div class="container-fluid container-1">
+
+                  <div class="container container-1-1">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <a href="">baş səhifə</a>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="">по-русски</a>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="">
+                                            in english
+                                    </a>
+                                </div>
+                                <div class="col-lg-6" >
+                                    <a href="" style="font-size:1.2em; font-weight: bold;">
+                                            Saytda Reklam
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle button-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          boss.az
+                                        </button>
+                                        
+                                      </div>
+                                </div>
+                                <div class="col-lg-2">
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+              </div>
+
+
+              <div class="container-fluid container-2">
+
+                <div class="container container-2-1" style="padding-left:5%; padding-top:0.5%;">
+
+                        <div class="row">
+
+                                <div class="col-lg-7">
+
+                                    <div class="row" id="row-1">
+                                        <div class="col-lg-4">
+                                            <a id="a-1" href="">
+                                                boss.az
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div id="div-1">
+                                                <button id="btn-1">
+                                                    İş elanları
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div>
+                                                <button id="btn-2">
+                                                    İş axtaranlar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-5">
+
+                                    <div class="row">
+                                        <div class="col-lg-1"></div>
+                                        
+                                        <div class="col-lg-3">
+                                            <button class="btn-2">
+                                                Haqqımızda
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+                                            <button class="btn-3">
+                                                Elan yerləşdirin
+                                            </button>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="container-fluid container-2-2">
+
+                    <div class="container container-2-2-1">
+
+                        <div class="row">
+
+                            <div class="col-lg-4 ul-1">
+                                <ul>
+                                   <li>
+                                       <span>
+                                           54
+                                       </span>
+                                       <a href="">
+                                           Maliyyə
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <span>
+                                           37
+                                       </span>
+                                       <a href="">
+                                           Marketinq
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <span>
+                                           33
+                                       </span>
+                                       <a href="">
+                                           İnformasiya texnologiyaları
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <span>
+                                           99
+                                       </span>
+                                       <a href="">
+                                           İnzibati
+                                       </a>
+                                   </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 ul-2">
+                                <ul>
+                                    <li>
+                                        <span >
+                                            112
+                                        </span>
+                                        <a href="">
+                                            Satış
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span style="padding-left:2.8%;">
+                                            27
+                                        </span>
+                                        <a href="">Dizayn</a>
+                                    </li>
+                                    <li>
+                                        <span style="padding-left:4.5%;">
+                                            4
+                                        </span>
+                                        <a href="" style="padding-left: 2.5%;">
+                                            Hüquqşünaslıq
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span style="padding-left:2%;">
+                                            21
+                                        </span>
+                                        <a href="">
+                                            Təhsil və elm
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 ul-3">
+                                
+                                        <ul>
+                                            <li style="padding-left:2%;">
+                                                <span>
+                                                    19
+                                                    
+                                                </span>
+                                                <a href="">
+                                                    Sənaye və kənd təsərrüfatı
+                                                </a>
+                                            </li>
+                                            <li>
+                                                
+                                                    <span >
+                                                    121
+                                                </span>
+                                                
+                                                
+                                                <a href="">
+                                                    Xidmət
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span style="padding-left:2%;">
+                                                    29
+                                                </span>
+                                                <a href="">
+                                                    Tibb və əczaçılıq
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span style="padding-left:4.5%;">
+                                                    0
+                                                </span>
+                                                <a href="">
+                                                    Müxtəlif
+                                                </a>
+                                            </li>
+                                        </ul>
+                                
+
+                                   
+                                    </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container container-2-2-2">
+
+                            <div class="row">
+    
+                                <div class="col-lg-4 ul-1">
+                                    <ul>
+                                       <li>
+                                           <span>
+                                               153
+                                           </span>
+                                           <a href="">
+                                               Maliyyə
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <span style="padding-left:2.5%;">
+                                               27
+                                           </span>
+                                           <a href="">
+                                               Marketinq
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <span style="padding-left:2.5%;">
+                                               66
+                                           </span>
+                                           <a href="">
+                                               İnformasiya texnologiyaları
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <span>
+                                               176
+                                           </span>
+                                           <a href="">
+                                               İnzibati
+                                           </a>
+                                       </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="col-lg-3 ul-2">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                67
+                                            </span>
+                                            <a href="">
+                                                Satış
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                91
+                                            </span>
+                                            <a href="">Dizayn</a>
+                                        </li>
+                                        <li>
+                                            <span style="padding-left:3%;">
+                                                4
+                                            </span>
+                                            <a href="" style="padding-left: 2.5%;">
+                                                Hüquqşünaslıq
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                38
+                                            </span>
+                                            <a href="">
+                                                Təhsil və elm
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="col-lg-4 ul-3">
+                                    
+                                            <ul>
+                                                <li style="padding-left:2%;">
+                                                    <span>
+                                                        76
+                                                        
+                                                    </span>
+                                                    <a href="">
+                                                        Sənaye və kənd təsərrüfatı
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    
+                                                        <span >
+                                                        222
+                                                    </span>
+                                                    
+                                                    
+                                                    <a href="">
+                                                        Xidmət
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <span style="padding-left:2%;">
+                                                        11
+                                                    </span>
+                                                    <a href="">
+                                                        Tibb və əczaçılıq
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <span style="padding-left:4.5%;">
+                                                        4
+                                                    </span>
+                                                    <a href="">
+                                                        Müxtəlif
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                    
+    
+                                       
+                                        </div>
+    
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="container-fluid container-2-3">
+                   <ul>
+                       <li> 
+                           <i class="fas fa-search"></i>
+                       
+                            </li>
+                       <li> 
+                            <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle btn-2-3"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span>
+                                          Axtarış
+                                      </span>
+                                    </button>
+                                    
+                            </div>
+                            
+                       </li>
+                       <li>
+                            <div class="btn-group dropup">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle btn-2-3-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Axtarış
+                                    </button>
+                            </div>
+                       </li>
+                   </ul>
+                </div>
+
+              </div>
+
+              <div class="container-fluid container-3">
+
+                <div class="container container-3-1">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <span>
+                                Kategoriya
+                            </span>
+                            <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle btn-2-1-2"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span>
+                                          Bütün kategoriyalar
+                                      </span>
+                                    </button>
+                                    
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4">
+                            <span>
+                                Şəhər
+                            </span>
+                            <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle btn-2-1-2"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span>
+                                          Bütün şəhərlər
+                                      </span>
+                                    </button>
+                                    
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <span>
+                                Əmək haqqı
+                            </span>
+                            <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle btn-2-1-2"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span>
+                                          Vacib deyil
+                                      </span>
+                                    </button>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container container-3-2">
+                    <div class="row">
+                        
+                            <div class="col-lg-4">
+                                <span>
+                                    Təhsil
+                                </span>
+                                <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle btn-2-1-2"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <span>
+                                              Vacib deyil
+                                          </span>
+                                        </button>
+                                        
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-4">
+                                <span>
+                                    İş təcrübəsi
+                                </span>
+                                <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle btn-2-1-2"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <span>
+                                              Vacib deyil
+                                          </span>
+                                        </button>
+                                        
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <span>
+                                    Açar sözlər
+                                </span>
+                                <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle btn-2-1-2"  type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+                                          <span>
+                                             
+                                          </span>
+                                        </button>
+                                        
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+                <div class="container container-3-3">
+                    <div class="row">
+                        <div class="col-lg-5"></div>
+                        <div class="col-lg-3">
+                                <button class="btn-3-1">
+                                        Axtar
+                                    </button>
+                        </div>
+                        <div class="col-lg-4"></div>
+                    </div>
+                  
+                </div>
+                
+              </div>
+
+          </nav>
+
+      </header>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+        <script>
+            let btn1 = document.getElementById("btn-1");
+            let container2 = document.getElementsByClassName("container-2-2-1")[0];
+            let btn2 = document.getElementById("btn-2");
+            let container22 = document.getElementsByClassName("container-2-2-2") [0];
+            let btn22 = document.getElementsByClassName("btn-2-3")[0];
+            let container3 = document.getElementsByClassName("container-3")[0];
+            let btn23 = document.getElementsByClassName("btn-2-3-2")[0];
+            btn1.addEventListener ("click", function(){
+                btn2.style.textDecoration = "underline";
+               btn2.style.backgroundColor = "#F8CB1C";
+                btn1.style.textDecoration = "none";
+                btn1.style.backgroundColor = "#F9D54B";
+                container22.style.display = "none";
+                container2.style.display = "block";
+            });
+
+            btn2.addEventListener("click", function(){
+                btn1.style.backgroundColor = "#F8CB1C";
+                btn1.style.textDecoration = "underline";
+                
+                btn2.style.textDecoration = "none";
+                btn2.style.backgroundColor = "#F9D54B";
+                container2.style.display = "none";
+                container22.style.display = "block";
+            });
+
+            btn22.addEventListener("click", function(){
+                btn22.style.display= "none";
+                btn23.style.visibility = "visible";
+                container3.style.display = "block";
+            });
+            btn23.addEventListener("click", function(){
+                btn23.style.visibility = "hidden";
+                container3.style.display = "none";
+                btn22.style.display = "block";
+            })
+        </script>
+</body>
+</html>
